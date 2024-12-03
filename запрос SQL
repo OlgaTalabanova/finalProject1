@@ -3,7 +3,7 @@
 
 SELECT c.login, COUNT (o.id) AS "number_of_orders"
 FROM "Couriers" AS c
-LEFT JOIN "Orders" AS o ON c.id = o."courierId"
+LEFT JOIN "Orders" AS o ON c.id = o."courierID"
 WHERE o."inDelivery" = true
 GROUP BY c.login;
 
