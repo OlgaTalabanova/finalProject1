@@ -10,3 +10,4 @@ def create_order():
 def get_order_details(track_number):
     response = requests.get(configuration.ORDER_URL + "/track", params={"t": track_number})
     return response
+
